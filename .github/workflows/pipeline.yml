@@ -39,12 +39,12 @@ jobs:
           healthcheck: "https://obscure-ocean-02441.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
-    tag_release:
-      needs: [simple_deployment_pipeline]
-      if: ${{ github.event_name == 'push' }}
-      runs-on: ubuntu-20.04
-      steps:
-        - uses: anothrNick/github-tag-action@1.36.0
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            DEFAULT_BUMP: "patch"
+  tag_release:
+    needs: [simple_deployment_pipeline]
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BUMP: "patch"

@@ -34,3 +34,4 @@ jobs:
           heroku_email: "popovmik@arcada.fi"
           healthcheck: "https://obscure-ocean-02441.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true

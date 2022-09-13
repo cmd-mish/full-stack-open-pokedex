@@ -1,0 +1,9 @@
+**Exercise 11.1**
+
+Continuous Integration and Deployment (CI/CD) is a process of developing software in short cycles that enable easier development, collaboration between developers and help avoid building up errors. The CI/CD is achieved by pushing updates to the main/production branch of a repository as often as several times per day, then an automated process builds the application and runs a set of tests that verify the integrity of the app.
+
+In case of Java, Jenkins ecosystem is most used for implementation of CI/CD flow. Jenkins is a CI server primarily written in Java itself and provides a variety of plugins for task automation, for example, compile a Java source code, build a JAR from the classes based on time or an event (e.g., git pus). The ecosystem follows the execution of the predefined steps and notifies the developer about the result. 
+
+Other than Jenkins, CI/CD for Java can also be implemented other tools such as TeamCity, Buddy, or Bamboo CI. The first one is developed by JetBrains and provides more customisation of a pipeline. Buddy suits the best for web developers and designers as it provides user-friendly interface and if web based. The latter one, Bamboo CI, offers such tools as automatic build, testing and deployment of multiple projects simultaneously. It also provides a better REST API and error reporting. 
+
+Choosing between self-hosted and cloud solution for CI/CD depends entirely on the scale of the project. Where small and medium sized projects, such as a project with six developers, can be conveniently hosted with a cloud solution, the bigger the project grows the more financially viable it may become to run own CI server. Self-hosted solutions provide more options for customisation of pipeline and full ownership of the code, which benefits the security aspect. 

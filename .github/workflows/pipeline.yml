@@ -32,3 +32,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "obscure-ocean-02441"
           heroku_email: "popovmik@arcada.fi"
+          healthcheck: "https://obscure-ocean-02441.herokuapp.com/health"
+          checkstring: "ok"

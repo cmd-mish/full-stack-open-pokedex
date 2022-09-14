@@ -1,0 +1,15 @@
+name: Application Health Check (Periodic)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  health_check:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v2
+        with:
+          url: https://obscure-ocean-02441.herokuapp.com/health

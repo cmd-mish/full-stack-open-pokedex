@@ -1,5 +1,5 @@
 # Link to exercises 11.20-11.21
-[https://github.com/cmd-mish/fullstackopen-11.20]
+https://github.com/cmd-mish/fullstackopen-11.20
 
 # Full Stack open CI/CD
 
